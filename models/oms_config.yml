@@ -20,7 +20,6 @@ models:
         description: "{{ doc('StatusCD') }}"
         tests:
           - accepted_values:
-            arguments:
               values: ['01','02','03']
 
   - name: orderitems_stg
