@@ -13,6 +13,8 @@ models:
         description: NULL when a customer has not yet placed an order.
 
   - name: stg_customers
+    config:
+      tags: ["exclude_from_prod"]
     description: This model cleans up customer data
     columns:
       - name: customer_id
