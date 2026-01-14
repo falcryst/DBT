@@ -40,14 +40,14 @@ models:
     # Config indicated by + and applies to all files under models/
     #+materialized: view
     orders_fact:
-      materialized: table
-      schema: L2_PROCESSING
+      +materialized: table
+      +schema: L2_PROCESSING
     customers_stg:
-      schema: L2_PROCESSING
+      +schema: L2_PROCESSING
     orders_stg:
-      schema: L2_PROCESSING
+      +schema: L2_PROCESSING
     orderitems_stg:
-      schema: L2_PROCESSING
+      +schema: L2_PROCESSING
     customerrevenue:
-      materialized: table
+      +materialized: table
     

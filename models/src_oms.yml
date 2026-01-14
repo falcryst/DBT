@@ -3,14 +3,15 @@ sources:
   description: The primary source system for order management system (OMS) data analytics.
   database: SLEEKMART_OMS
   schema: L1_LANDING
-  freshness: 
-    error_after:
-      count: 1 
-      period: day
-    warn_after:
-      count: 3
-      period: day
-  loaded_at_field: Updated_at
+  config:
+    freshness: 
+      error_after:
+        count: 1 
+        period: day
+      warn_after:
+        count: 3
+        period: day
+    loaded_at_field: Updated_at
 
   tables:
   - name: cust
