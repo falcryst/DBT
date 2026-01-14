@@ -1,16 +1,7 @@
-select orderid, count(*) from 
-{{ref('orderitems_stg')}}
-group by orderid
-
-
-select sum(totalprice) from 
-{{ref('orderitems_stg')}}
-where orderid= 800044
-
-select * from 
-{{ref('orderitems_stg')}}
-where orderid= 800044
-
-
-
-select * from {{ref('orders_fact')}} OS where ordercount!=1
+ - name: employees_stg
+    description: Staged employees data from order management system (OMS), with minor row-level transformation.
+    columns:
+      - name: JobTitle
+        description: Employee's Job Title based on his current Roles and Responsibilities.
+        tests:
+          - string_not_empty
