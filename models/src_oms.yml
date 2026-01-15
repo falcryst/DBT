@@ -32,3 +32,14 @@ sources:
         tests:
           - not_null
           - string_not_empty
+  - name: stre
+    description: The stores table from order management system (OMS)
+    identifier: stores
+  - name: supp
+    description: The supplier table from order management system (OMS)
+    identifier: SUPPLIERS
+
+  - name: prod
+    description: The product table from order management system (OMS)
+    identifier: PRODUCTS
+
